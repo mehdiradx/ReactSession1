@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Mehdi">
+
+	<meta property="og:title" content="React Tech Session">
+	<meta property="og:type" content="website">
+
+	<meta name="description" content="">
+
+	<title>React Tech Session</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="css/flowtime.css">
+	<link rel="stylesheet" href="css/themes/default.css">
+	<link rel="stylesheet" href="assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+
+
+
+
+
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="React js Introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<a href="#/section-1/page-2"><img src="./img/Front-End-Development-with-React.png"></a>
+						<p class="page-title"><strong>React js</strong> Fundamental by <a href="mailto: me_rezaei@iranet.net" target="_blank">Me_Rezaei</a></p>
+						<p>Session 1<br>
+							Introduction</p>
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+				<h1>What’s in it for you?</h1>
+				<p>There is some topics about <strong>react js</strong>:</p>
+				<ul>
+					<li>Intro</li>
+					<li>SPA vs MPA</li>
+					<li>Angular vs React vs vue</li>
+					<li>React Config</li>
+					<li>React and Redux Architecture</li>
+					<li>Example project</li>
+					<li>Future of React</li>
+				</ul>
+				<p>After this session, we have to know why we would rather select react js 
+					as our Frontend tech stack than other technologies.</p>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+				<h1>Intro</h1>
+				<p>A JavaScript library for building user interfaces</p>
+				<h3>React in a glance:</h3>
+				<ul>
+					<li><strong>Declarative</strong> views make your code more predictable and easier to debug.</li>
+					<li> Build encapsulated <strong>Component</strong> that manage their own state, then compose them to make complex UIs.</li>
+					<li>Learn Once, Write Anywhere.
+						<span class="small">We don’t make assumptions about the rest of your technology stack,
+							so you can develop new features in React without rewriting existing code.</span></li>
+					<li>React can also <strong>render on the server</strong> using Node and power mobile apps using <strong>React Native</strong>.</li>
+				</ul>
+			</div>
+			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
+				<h1>Overview Mode</h1>
+				<p>We Want to know,</p>
+				<ul>
+					<li class="small">What is React</li>
+					<li class="small">Why React</li>
+					<li class="small">Feature of React</li>
+					<li class="small">React Pre-requisites</li>
+					<li class="small">Industry Trends</li>
+					<li class="small">What is Component, State and props</li>
+				</ul>
+			</div>
+			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
+				<h1>Defining A Blade Layout</h1>
+				<p>In general, <code>tight coupling</code> is usually not good.</p>
+				<pre><code class="language-markup">
+&lt;html&gt;
+	&lt;body&gt;
+		@section('sidebar')
+			This is the master sidebar.
+		@show
+
+		&lt;body class="container"&gt;
+			@yield('content')
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+				<p>We can see more details <a href="https://laravel.com/docs/4.2/templates">here (laravel)</a>
+					and <a href="https://www.oracle.com/technetwork/tutorials/tutorials-1990070.html">here (jsf)</a>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-3">
+			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
+				<h1>SPA vs MPA</h1>
+				<ul>
+					<li><h3>1<sup>th</sup> What’s the difference?</h3></li>
+					<li><h3>2<sup>th</sup> Advantages of SPAs</h3></li>
+					<li><h3>3<sup>th</sup> SPA Drawbacks (and how to fix them)</h3></li>
+					<li><h3>4<sup>th</sup> So what’s the verdict?</h3></li>
+				</ul>
+			</div>
+			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
+				<h2>What’s the difference?</h2>
+				<p class="ft-fragment">
+					<img src="./img/Traditional-page-lifecycle.png"> 
+						<p class="ft-fragment">
+							<img src="./img/SPA-page-lifecycle.png">
+						</p>
+				</p>
+			</div>
+			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
+				<h2>Advantages of SPAs:</h2>
+				<ul>
+					<li class="ft-fragment step">1. Fast and smooth UX</li>
+					<li class="ft-fragment step">2. Local caching and offline functionality</li>
+					<li class="ft-fragment step">3. Perfect Mobile Adaptability</li>
+					<li class="ft-fragment step">4. API reuse</li>
+					<li class="ft-fragment step">5. Streamlined development</li>
+					<li class="ft-fragment step">6. Back-end/front-end separation</li>
+					<li class="ft-fragment step">7. Painless Chrome debugging</li>
+				</ul>
+			</div>
+			<div id="/section-3/page-4" class="ft-page" data-id="page-4">
+				<h2>SPA Drawbacks (and how to fix them)</h2>
+				<ul>
+					<li class="ft-fragment step">1. SEO issues</li>
+					<li class="ft-fragment step">2. Memory leaks</li>
+					<li class="ft-fragment step">3. Security issues</li>
+					<li class="ft-fragment step">4. Slow first load</li>
+					<li class="ft-fragment step">5. Limited functionality with JavaScript disabled</li>
+					<li class="ft-fragment step">6. Poor app scalability</li>
+					<li class="ft-fragment step">7. Navigation issues</li>
+					<li class="ft-fragment step">8. Weird behavior due to asynchronous requests</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-4">
+			<div id="/section-4/page-1" class="ft-page" data-id="page-1">
+				<h1>Industry Trends</h1>
+				<p>Which one ?</p>
+				<p>
+					<strong class="attention">Angular </strong>
+					vs
+					<strong class="attention">React </strong>
+					vs
+					<strong class="attention">vue </strong> <br>
+					<span class="small">Angularjs, Ember, PReact, backbone, Vanilla, Meteor, Svelte, ... .</span>
+				</p>
+				<ol>
+					<li>Popularity....</li>
+					<li>Community...</li>
+					<li>Maintainer...</li>
+					<li>Used by...</li>
+					<li>Job market...</li>
+					<li>Google trends...</li>
+					<li>Stackoverflow trends...</li>
+					<li>Downloads...</li>
+					<li>Learning...</li>
+					<li>Migration...</li>
+					<li>Mobile version...</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-5">
+			<div id="/section-5/page-1" class="ft-page" data-id="page-1">
+				<h1>React Config</h1>
+				<dl>
+					<dt>With Starter</dt>
+						<dd>Such as:  Create React App, Next.js, Gatsby, Neutrino, Nx, Parcel, Razzle, 
+							<span class="small">React Starter Kit, react-boilerplate</span></dd>
+					<dt>Manual Config</dt>
+						<dd>We need: A package manager, A bundler, A compiler.</dd>
+					<dt>without dev-server</dt>
+						<dd>No JSX, NO ES6.</dd>
+				</dl>
+			</div>
+			<div id="/section-5/page-2" class="ft-page" data-id="page-2">
+				<h2>Creating React App From Scratch</h2>
+				<ol>
+					<li>Initial npm</li>
+					<li>Intall React and ReactDOM</li>
+					<li>Config webpack, Babel, HMR, Eslint, Prettier</li>
+				</ol>
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h1>Live Demo</h1>
+						<img src="./img/demoTime.gif">
+					</div>
+				</div>
+				<!-- <p>Issues: <q>We have ro config </q>.</p>
+				<blockquote>
+					Sotto un cespo di rose scarlatte dai al rospo the caldo col latte.<br>
+					Sotto un cespo di rose paonazze tocca al rospo lavare le tazze.
+				</blockquote>
+				<p><cite><a href="http://html5doctor.com/blockquote-q-cite/" target="_blank">Quoting and citing with &lt;blockquote&gt;, &lt;q&gt;, &lt;cite&gt;, and the cite attribute</a>	</cite> on HTML5 Doctor.</p> -->
+
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-6">
+			<div id="/section-6/page-1" class="ft-page" data-id="page-1">
+				<h1>How to Render React DOM</h1>
+				<img class="sax parallax" src="img/react-render.jpg" data-parallax="750,750">
+			</div>
+			<div id="/section-6/page-2" class="ft-page parallax-demo" data-id="page-2">
+				<h1>What is Virtual DOM</h1>
+				<img src="img/reactdom.png">
+			</div>
+			<div id="/section-6/page-3" class="ft-page parallax-demo" data-id="page-3">
+				<h1>why Redux</h1>
+				<img src="img/redux-store.png">
+			</div>
+			<div id="/section-6/page-4" class="ft-page" data-id="page-4">
+				<h1>Redux Flow</h1>
+				<img src="img/redux.jpg">
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-7">
+			<div id="/section-7/page-1" class="ft-page" data-id="page-1">
+				<h1><strong class="attention">Future of React</strong></h1>
+				<ul>
+					<dl>
+						<dt><strong>OCamel</strong></dt>
+							<dd>OCaml is an industrial strength programming language 
+								supporting functional, imperative and object-oriented styles</dd>
+						<dt><strong>ReasonML</strong></dt>
+						<dd>Reason lets you write simple, fast and quality type safe
+							code while leveraging both the JavaScript & OCaml ecosystems.</dd>
+						<dt><strong>Svelte</strong></dt>
+						<dd>Svelte is a radical new approach to building user interfaces.
+							Whereas traditional frameworks like React and Vue do the bulk of their
+							work in the browser, Svelte shifts that work into a compile step that
+							happens when you build your app.<br>
+							Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.</dd>
+					</dl>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-8">
+			<div id="/section-8/page-1" class="ft-page" data-id="page-1">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h1><strong>Question?</strong></h1>
+					</div>
+				</div>
+			</div>
+			<div id="/section-8/page-2" class="ft-page" data-id="page-2">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h1><strong>Thank You</strong></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.fragmentsAlwaysOnOnceRevealed(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		function onNavigation(e)
+		{
+			_gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+			// console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+			cacheTitle = document.title.replace("Flowtime.js | ", "");
+			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+			//console.log('page', e.page, 'pageIndex', e.pageIndex);
+			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+			//console.log('prevSection', e.prevSection);
+			//console.log('nextSection', e.nextSection);
+			//console.log('prevPage', e.prevPage);
+			//console.log('nextPage', e.nextPage);
+			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+			//console.log("isOverview", e.isOverview);
+			//console.log('progress:', e.progress, 'total:', e.total);
+			//var value = Math.round(e.progress * 100 / e.total);
+			//console.log('Completion: ' + value + '%');
+		}
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
